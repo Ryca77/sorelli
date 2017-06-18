@@ -1,0 +1,276 @@
+body {
+	background-image: url('../images/london-skyline-extended.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+.navigation {
+	position: fixed;
+	z-index: 1;
+	display: table;
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,0.7);
+	border-top: 0.5px solid rgba(255,255,255,0.5);
+	border-bottom: 0.5px solid rgba(255,255,255,0.5);
+	-webkit-backdrop-filter: blur(3px);
+}
+
+.name {
+	display: table-cell;
+	vertical-align: middle;
+	width: 150px;
+	text-align: left;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	padding-left: 20px;
+}
+
+.name:hover {
+	cursor: pointer;
+}
+
+.nav-links {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+.nav-links li {
+	display: inline-block;
+	width: 125px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	color: #FFFFFF;
+	background-color: rgba(0,0,0,0.5);
+	border-left: 0.5px solid rgba(255,255,255,0.5);
+	border-right: 0.5px solid rgba(255,255,255,0.5);
+}
+
+.nav-links li:hover {
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.3);
+}
+
+.menu-icon {
+	float: right;
+	width: 30px;
+	margin-right: 20px;
+	margin-top: 14px;
+	display: none;
+}
+
+.close-icon {
+	float: right;
+	width: 25px;
+	margin-right: 20px;
+	margin-top: 12px;
+	display: none;
+}
+
+.menu-icon:hover, .close-icon:hover {
+	cursor: pointer;
+}
+
+.menu-overlay {
+	right: 0;
+	z-index: 2;
+	position: fixed;
+	margin-right: 5px;
+	margin-top: 75px;
+	background-color: rgba(0,0,0,0.7);
+	display: none;
+	border: 0.5px solid rgba(0,0,0,0.5);
+}
+
+.menu-overlay li {
+	list-style-type: none;
+	padding: 10px;
+	line-height: 30px;
+	color: #FFFFFF;
+	white-space: nowrap;
+}
+
+.menu-overlay li:hover {
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.3);
+}
+
+.filler {
+	height: 50px;
+	background-color: rgba(255,255,255,1);
+}
+
+.projects {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	background-color: rgba(255,255,255,1);
+	box-sizing: border-box;
+	border-bottom: 0.5px solid rgba(0,0,0,0.5);
+	text-align: justify;
+}
+
+.projects-header {
+	width: 100%;
+	padding-bottom: 10px;
+	border-bottom: 0.5px solid rgba(0,0,0,0.5);
+}
+
+.alike, .zombie, .bike {
+	border-bottom: 0.5px solid rgba(0,0,0,0.5);
+}
+
+.alike-video {
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	box-shadow: inset 0 0 100px rgba(0,0,20,.7), 0 5px 15px rgba(0,0,0,.5);
+}
+
+.zombie-image {
+	background-image: url('../images/zombie-still-640px.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 20px;
+	width: 640px;
+	height: 100%;
+	transition: 1.5s ease-in-out;
+	box-shadow: inset 0 0 100px rgba(0,0,20,.7), 0 5px 15px rgba(0,0,0,.5);
+}
+
+.bike-image {
+	background-image: url('../images/bike-app-still-noborder.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 20px;
+	width: 640px;
+	height: 100%;
+	transition: 1.5s ease-in-out;
+	box-shadow: inset 0 0 100px rgba(0,0,20,.7), 0 5px 15px rgba(0,0,0,.5);
+}
+
+.quiz-image {
+	background-image: url('../images/quiz-app-still-noborder.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 20px;
+	width: 640px;
+	height: 100%;
+	transition: 1.5s ease-in-out;
+	box-shadow: inset 0 0 100px rgba(0,0,20,.7), 0 5px 15px rgba(0,0,0,.5);
+}
+
+.image-container {
+	margin: 0 auto;
+	width: 640px;
+	height: 437px;
+}
+
+.image-container div:hover {
+	-webkit-filter: blur(3px);
+}
+
+.code {
+	float: right;
+	padding: 3px;
+	border: 1px solid rgba(0,0,0,0.7);
+	border-radius: 3px;
+	color: rgba(0,0,0,0.7);
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.technologies {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.icons {
+	margin-left: 10px;
+}
+
+.about-me {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: rgba(255,255,255,1);
+	text-align: justify;
+	border-bottom: 0.5px solid rgba(0,0,0,0.5);
+}
+
+.contact {
+	width: 100%;
+	height: 225px;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: rgba(255,255,255,1);
+	border-bottom: 0.5px solid rgba(0,0,0,0.5);
+}
+
+.linkedin, .github, .twitter {
+	width: 30px;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+	body {
+		background-size: 250%;
+	}
+	.nav-links li {
+		display: none;
+	}
+	.menu-icon {
+		display: unset;
+	}
+	.alike-video {
+		width: 480px;
+		height: 270px;
+	}
+	.zombie-image, .bike-image, .quiz-image {
+		width: 480px;
+	}
+	.image-container {
+		width: 480px;
+		height: 327.75px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	body {
+		background-size: 300%;
+	}
+	.filler {
+		height: 50px;
+	}
+	.descriptions, .me, .code {
+		font-size: 12px;
+	}
+	.alike-video {
+		width: 320px;
+		height: 180px;
+	}
+	.zombie-image, .bike-image, .quiz-image {
+		width: 320px;
+	}
+	.zombie-header {
+		width: 50%;
+	}
+	.image-container {
+		width: 320px;
+		height: 218.5px;
+	}
+}	
