@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+$(window).load(function() {
+    var fixedHeight = $(".background-image").outerHeight(true);
+	$(".content").css("margin-top", fixedHeight + "px");
+});
+
 $(".logo").click(function() {
 	$('html,body').animate( {
 		scrollTop: $("#background").offset().top
