@@ -13,19 +13,19 @@ $(".logo").click(function() {
 
 $(".nav1, .menu1").click(function() {
 	$('html,body').animate( {
-		scrollTop: $(".services").offset().top - 70
+		scrollTop: $(".services").offset().top - 63
     } , 1500);
 });
 
 $(".nav2, .menu2").click(function() {
 	$('html,body').animate( {
-		scrollTop: $(".about").offset().top - 70
+		scrollTop: $(".about").offset().top - 63
     } , 1500);
 });
 
 $(".nav3, .menu3").click(function() {
 	$('html,body').animate( {
-		scrollTop: $(".contact").offset().top - 70
+		scrollTop: $(".contact").offset().top - 63
     } , 1500);
 });
 
