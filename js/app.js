@@ -3,6 +3,14 @@ $(document).ready(function() {
 $(window).load(function() {
     var fixedHeight = $(".background-image").outerHeight(true);
 	$(".content").css("margin-top", fixedHeight + "px");
+	$(".logo").css("display", "none");
+	$(".menu-icon").css("margin-top", "12px");
+});
+
+$(window).scroll(function() {
+	if($('.logo').is(':hidden')) {
+		$(".logo").css("display", "table-cell");
+	}
 });
 
 $(".logo").click(function() {
