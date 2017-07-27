@@ -12,6 +12,7 @@ $(window).scroll(function() {
 	if($('.logo').is(':hidden')) {
 		$('.logo').css('display', 'table-cell');
 		$('.main-logo').fadeOut(1000);
+		$('.filler').delay(1000).fadeIn(1000);
 	}
 });
 
