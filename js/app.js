@@ -14,30 +14,40 @@ $(window).scroll(function() {
 		$('.main-logo').fadeOut(1000);
 		$('.filler').delay(1000).fadeIn(1000);
 	}
+	/*if($(".whatwedo, .about, .contact").is(':hidden')) {
+		$(".whatwedo, .about, .contact").show();
+	}*/
 });
 
 $(".logo").click(function() {
 	$('html,body').animate( {
 		scrollTop: $("#background").offset().top
     } , 1500);
+    $(".whatwedo, .services, .about, .contact").show();
 });
 
 $(".nav1, .menu1").click(function() {
 	$('html,body').animate( {
 		scrollTop: $(".services").offset().top - 63
     } , 1500);
+    $(".whatwedo, .about, .contact").hide();
+    $(".services").show();
 });
 
 $(".nav2, .menu2").click(function() {
 	$('html,body').animate( {
 		scrollTop: $(".about").offset().top - 63
     } , 1500);
+    $(".whatwedo, .services, .contact").hide();
+    $(".about").show();
 });
 
 $(".nav3, .menu3").click(function() {
 	$('html,body').animate( {
 		scrollTop: $(".contact").offset().top - 63
     } , 1500);
+    $(".whatwedo, .services, .about").hide();
+    $(".contact").show();
 });
 
 $('.menu-icon, .close-icon').on('click', function() {
