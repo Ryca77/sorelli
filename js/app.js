@@ -32,6 +32,12 @@ var contact = function() {
 	$('html,body').animate( {
 		scrollTop: $(".contact").offset().top -60
     } , 1500);
+    $('.logo').css('display', 'table-cell');
+	$('.main-logo').fadeOut(1000);
+	$('.filler').delay(1000).fadeIn(1000);
+	if ($(window).width() > 800) {
+		$('.contact').css('width', '70%').css('margin-left', '30%');
+	};
 };
 
 var logo = function() {
