@@ -35,12 +35,11 @@ var contact = function() {
 };
 
 var logo = function() {
-	$('html,body').animate( {
-		scrollTop: $(".whatwedo").offset().top - 60
-    } , 1500);
-};
+	location.reload();
+}
 
 $(".logo").click(function() {
+    $('html,body').scrollTop(0);
     $(".whatwedo, .services, .about, .contact").show();
     logo();
 });
@@ -48,18 +47,24 @@ $(".logo").click(function() {
 $(".nav1, .menu1").click(function() {
     $(".whatwedo, .about, .contact").hide();
     $(".services").show();
+    $(".background-image").show();
+    $(".order-chaos-image").hide();
     services();
 });
 
 $(".nav2, .menu2").click(function() {
     $(".whatwedo, .services, .contact").hide();
     $(".about").show();
+    $(".background-image").show();
+    $(".order-chaos-image").hide();
     about();
 });
 
 $(".nav3, .menu3").click(function() {
     $(".whatwedo, .services, .about").hide();
     $(".contact").show();
+    $(".background-image").hide();
+    $(".order-chaos-image").show();
     contact();
 });
 
