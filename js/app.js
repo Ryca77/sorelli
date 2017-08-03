@@ -32,7 +32,7 @@ var contact = function() {
 	$('html,body').animate( {
 		scrollTop: $(".contact").offset().top -60
     } , 1500);
-    $('.logo').css('display', 'table-cell');
+    $('.logo').css('display', 'block');
 	$('.main-logo').fadeOut(1000);
 	$('.filler').delay(1000).fadeIn(1000);
 	if ($(window).width() > 800) {

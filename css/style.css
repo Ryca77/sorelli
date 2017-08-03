@@ -11,18 +11,19 @@ body {
 	padding-bottom: 5px;
 	width: 100%;
 	height: 50px;
+	right: 20%;
+	left: 20%;
+	width: 60%;
 	box-sizing: border-box;
 	background-color: rgba(255,255,255,1);
 	-webkit-backdrop-filter: blur(3px);
 }
 
 .logo {
-	display: table-cell;
+	display: block;
 	vertical-align: middle;
 	width: 150px;
 	text-align: left;
-	padding-left: 20px;
-	margin-left: 100%;
 	margin-top: 2px;
 }
 
@@ -35,7 +36,6 @@ body {
 	vertical-align: middle;
 	text-align: right;
 	list-style-type: none;
-	padding-right: 20%;
 }
 
 .nav-links li {
@@ -153,6 +153,17 @@ body {
 	font-size: 20px;
 }
 
+.headline {
+	font-weight: bold;
+	text-align: center;
+}
+
+.dialogue {
+	font-style: italic;
+	text-align: justify;
+	font-size: 18px;
+}
+
 .services {
 	width: 100%;
 	height: 100%;
@@ -165,6 +176,11 @@ body {
 	text-align: justify;
 }
 
+.services-list {
+	list-style-image: url(../images/sorelli-s-bullet-10px.png);
+	line-height: 25px;
+}
+
 .about {
 	width: 100%;
 	height: 100%;
@@ -175,6 +191,11 @@ body {
 	box-sizing: border-box;
 	border-bottom: 0.5px solid rgba(0,0,0,0.5);
 	text-align: justify;
+}
+
+.name {
+	font-size: 18px;
+	font-style: italic;
 }
 
 .services-header, .about-header, .contact-header {
@@ -206,7 +227,7 @@ body {
 	margin-left: 10px;
 }
 
-.linkedin, .github, .twitter {
+.facebook, .linkedin {
 	width: 30px;
 	margin-top: 5px;
 	margin-right: 10px;
@@ -216,8 +237,16 @@ body {
 	body {
 		background-size: 100%;
 	}
-	.logo {
-		margin-left: 0px;
+	.navigation {
+		right: 2%;
+		left: 2%;
+		width: 96%;
+	}
+	.nav-links li {
+		display: none;
+	}
+	.menu-icon {
+		display: unset;
 	}
 	.background-image, .order-chaos-image {
 		right: 2%;
@@ -228,12 +257,6 @@ body {
 		top: 75px;
 		margin-bottom: -65px;
 		width: 50%;
-	}
-	.nav-links li {
-		display: none;
-	}
-	.menu-icon {
-		display: unset;
 	}
 	.filler {
 		height: 62px;
@@ -258,10 +281,18 @@ body {
 	body {
 		background-size: 100%;
 	}
+	.navigation {
+		right: 2%;
+		left: 2%;
+		width: 96%;
+	}
+	.logo {
+		padding-left: 5px;
+	}
 	.background-image, .order-chaos-image {
-		right: 5%;
-		left: 5%;
-		width: 90%;
+		right: 2%;
+		left: 2%;
+		width: 96%;
 	}
 	.main-logo {
 		top: 75px;
