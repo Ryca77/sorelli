@@ -177,8 +177,12 @@ body {
 }
 
 .services-list {
-	list-style-image: url(../images/sorelli-s-bullet-10px.png);
+	list-style-image: url(../images/sorelli-bullet.png);
 	line-height: 25px;
+}
+
+.services-list li {
+	padding-left: 5px;
 }
 
 .about {
